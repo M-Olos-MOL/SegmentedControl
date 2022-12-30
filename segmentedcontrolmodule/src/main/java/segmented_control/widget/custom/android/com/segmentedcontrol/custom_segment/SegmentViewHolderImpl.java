@@ -4,7 +4,7 @@ import android.animation.ValueAnimator;
 import android.annotation.SuppressLint;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.util.TypedValue;
 import android.view.MotionEvent;
 import android.view.View;
@@ -147,12 +147,7 @@ public class SegmentViewHolderImpl extends SegmentViewHolder<CharSequence> {
     }
 
     private void setBackground(Drawable drawable) {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
-            itemTV.setBackground(drawable);
-        } else {
-            //noinspection deprecation
-            itemTV.setBackgroundDrawable(drawable);
-        }
+        itemTV.setBackground(drawable);
     }
 
     private boolean hasBackground() {
