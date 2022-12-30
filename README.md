@@ -1,5 +1,5 @@
 # Android SegmentedControl + multi row support + multi selection
-### minSdk API 14+
+### minSdk API 21+
 
 ![N|Solid](https://raw.githubusercontent.com/RobertApikyan/SegmentedControl/release_v0.1/app/src/main/res/mipmap-hdpi/ic_launcher.png)
 
