@@ -2,12 +2,13 @@ apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 33
+    namespace "segmented_control"
 
     defaultConfig {
         minSdkVersion 21
         targetSdkVersion 33
         versionCode 2
-        versionName "1.2.2"
+        versionName "1.2.3"
 
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
     }
@@ -28,7 +29,7 @@ dependencies {
 
 task sourcesJar(type: Jar) {
     from android.sourceSets.main.java.srcDirs
-    classifier = 'sources'
+    archiveClassifier.set("sources")
 }
 
 artifacts {
